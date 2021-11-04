@@ -14,7 +14,6 @@ jobs:
           branch=${raw##*/}
           echo "BRANCH=$branch" >> $GITHUB_ENV
       - name: publish version
-        if: startsWith(github.event.ref, 'refs/tags')
         run: |
           sh .github/script/pushevent.sh Release
         env:
