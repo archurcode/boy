@@ -12,7 +12,7 @@ echo $rb
 echo $GIT_BRANCH_IMAGE_VERSION
 echo $GIT_BRANCH_TAG
 
-https://github.com/archurcode/girl.git
+git clone https://github.com/archurcode/girl.git
 cd girl
 
 git checkout $GIT_BRANCH_TAG --
